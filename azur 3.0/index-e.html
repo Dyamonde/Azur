@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Hotel Azur Berlin</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" href="layout.css" media="screen,tv">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("li#anfahrt-e").click(function(){
+				$("div#center").load('anfahrt-e.html');
+			});
+			
+			$("li#reservierung-e").click(function(){
+				$("div#center").load('reservierung-e.html');
+			});
+			
+			$("li#preise-e").click(function(){
+				$("div#center").load('preise-e.html');
+				navlistitem="preise.html";
+			});
+			
+			$("li#breakfast-e").click(function(){
+				$("div#center").load('breakfast-e.html');
+			});
+			
+			$("li#zimmer-e").click(function(){
+				$("div#center").load('zimmer-e.html');
+			});
+			
+			$("a#impressum-e").click(function(){
+				$("div#center").load('impressum-e.html');
+			});
+			
+			$("ul#navlist li").mouseover(function(){
+				$(this).css({"background-color":"#ffe84e"});
+				$(this).css({"color":"#996633"});
+				$(this).css({"cursor":"pointer"});
+			});
+			
+			$("ul#navlist li").mouseout(function(){
+				$(this).css({"background-color":"#996633"});
+				$(this).css({"color":"#ffe84e"});
+			});
+
+			$("ul#navlist a").mouseover(function(){
+				$(this).css({"background-color":"#ffe84e"});
+				$(this).css({"color":"#996633"});
+				$(this).css({"cursor":"pointer"});
+			});
+			
+			$("ul#navlist a").mouseout(function(){
+				$(this).css({"background-color":"#996633"});
+				$(this).css({"color":"#ffe84e"});
+			});
+			
+			$("a#impressum-e").mouseover(function(){
+				$(this).css({"cursor":"pointer"});
+			});			
+		});
+	</script>
+	<style>
+	#content
+	{ width:300px;
+	  height:300px;
+	  float:left;
+	  margin-top:10px;
+	  margin-left:20px;
+	}
+	
+	#front
+	{ margin:20px;
+	}
+	
+	#berlinmap
+	{ clear:left;
+	  float:left;
+	  margin-top:20px;
+	  margin-left:20px;
+	}
+	
+	#HotelDePic
+	{ margin-top:20px;
+	  margin-left:70px;
+	  height:120px;
+	}
+	
+	#HotelDe2013Pic
+	{ margin-top:20px;
+	  margin-left:10px;
+	  height:120px;
+	}
+	
+	#HRSDePic
+	{ margin-top:20px;
+	  margin-left:10px;
+	  height:120px;
+	}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="head">
+			<img src="./pics/berlin2.gif" id="welcome">
+			<img src="./pics/azurlogo.gif" id="logo">
+		</div>
+		
+		<div id="divnav">
+			<ul id="lang">
+				<li id="lang1"><a href="./index.html">German</a></li>
+				<li><a>-</a></li>
+				<li><a href="./index-e.html">English</a></li>
+			</ul>
+			
+			<ul id="navlist">
+				<li id="anfahrt-e">Finding us</li>
+				<li id="reservierung-e">Reservation</li>
+				<li id="preise-e">Prices</li>
+				<li id="breakfast-e">Breakfast</li>
+				<li id="zimmer-e">Rooms</li>
+				<li><a href="./index-e.html" id="home-e">Home</a></li>
+			</ul>				
+		</div>
+		
+		<div id="center">
+			<div id="content">
+				<h2>About us:</h2>
+				<p>our Hotel was built 1993 in Berlin Kaulsdorf. 
+				   Kaulsdorf is on the outer reaches of Berlin, far away from the hassle 
+				   of the main city but still close enough to get there in a flash.
+				</p><br>
+				<p>It takes only 20 minutes of easy and comfortable train travel and the 
+				   nearest station is just a five minute walk away from the hotel. A train 
+				   leaves every ten minutes, so you should´nt have trouble to get one without 
+				   having to wait for ages.
+				</p><br>
+				<p>And while you explore the wonders of our beautiful capital your car waits 
+				   safely on our parking lot - free of charge, of course.
+				</p>
+			</div>
+			
+			<img id="front" src="./pics/azurfront.jpg">
+			<img id="berlinmap" src="./pics/MapKaulsdorf.jpg">
+			<img src="./pics/bookingcom2016.jpg" id="HotelDePic">
+			<img src="./pics/HRSBewertung.jpg" id="HRSDePic">
+			<img src="./pics/hotelDE2016.jpg" id="HotelDe2013Pic">
+		</div>
+		
+		<div id="left">
+			<img src="./pics/hausazur.jpg" id="picleft">
+			<h2>Hotel Azur Garni</h2>
+			<h2>Inh.: T. Meisel</h2>
+			<h3>Ferdinandstr. 39</h3> 
+			<h3>12621 Berlin</h3>
+			<p><h3>Tel.: +49-(0)30 56 54 02 0</h3></p>
+			<p><h3>E-Mail: hausazur@aol.com </h3></p>
+			<p>
+			<p><h3>Reception:  6.00 am - 10.00 pm </h3></p>
+			<p><h3>Check in: Noon - 10.00 pm </h3></p>
+			<p><h3>Check out:   until 11.00 am </h3></p>
+			<a id="impressum-e">Editorial</a>
+		</div>
+		
+	</div>
+</body>
+</html>

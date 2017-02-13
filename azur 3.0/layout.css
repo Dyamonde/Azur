@@ -1,0 +1,120 @@
+*,body,p,ul,img 
+{ margin:0; 
+  padding:0; 
+  border:0; 
+}
+
+body
+{ background: url(./pics/bg.png);
+}
+
+#page
+{  width:1024px;
+   height:768px;
+   margin:auto;   
+}
+
+#head
+{ background: url(./pics/head_back.gif);
+  height:119px;
+  width:100%;
+}
+
+#welcome
+{ float:left
+}
+
+#logo
+{ float:right;
+}
+
+#divnav
+{  height:20px;
+   width:100%;
+   background-color:#996633;
+}
+
+#lang
+{ list-style:none;
+}
+
+#lang a
+{ float:left;
+  text-decoration:none;
+  display:block;
+  color:#f1e8b3;
+  margin-right:10px;
+}
+
+#lang1
+{ margin-left:30px;
+}  
+
+#navlist
+{ list-style:none;
+}
+
+#navlist li
+{ float:right;
+  text-decoration:none;
+  display:block;
+  color:#ffe84e;
+  margin-right:10px;
+  font-weight:bold;
+}
+
+#navlist a
+{ float:right;
+  text-decoration:none;
+  display:block;
+  color:#ffe84e;
+  font-weight:bold;
+}
+
+#navlist6
+{ margin-right:30px;
+}  
+
+
+#left
+{ width:20%;
+  height:481px;;
+  background-color:#3366ff;
+  text-align:center;
+  color:white;
+  font-family:Arial;
+}
+
+#picleft
+{ margin:10px;
+}
+
+#left h2
+{ font-size:16px;
+}
+
+#left h3
+{ font-size:13px;
+  font-weight:normal;
+}
+
+#left p
+{ font-size:10px;
+  margin-top:14px;
+}
+
+#left a
+{ font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+  display:block;
+  margin-top:16px;
+}
+
+#center
+{ background-color:#f1e8b3;
+  height:481px;
+  width:80%;
+  float:right;
+}

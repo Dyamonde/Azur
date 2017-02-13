@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Herzlich Willkommen im Hotel Azur Berlin</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" href="layout.css" media="screen,tv">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a#test").click(function(){
+				$("div#center").load('preise.html');
+			});
+			$("ul#navlist li").mouseover(function(){
+				$(this).css({"background-color":"#ffe84e"});
+				$(this).css({"color":"#996633"});
+				$(this).css({"cursor":"pointer"});
+			});
+			$("ul#navlist li").mouseout(function(){
+				$(this).css({"background-color":"#996633"});
+				$(this).css({"color":"#ffe84e"});
+			});
+		});
+	</script>
+
+	<style>
+	#content
+	{ width:300px;
+	  height:300px;
+	  float:left;
+	  margin-top:20px;
+	  margin-left:20px;
+	}
+	
+	#front
+	{ margin:20px;
+	}
+	
+	#berlinmap
+	{ clear:left;
+	  float:left;
+	  margin-top:20px;
+	  margin-left:20px;
+	}
+	
+	#maptext
+	{ position:relative;
+	  top:79px;
+	  left:5px;
+	}
+	</style>
+</head>
+<body>
+	
+	<div id="page">
+		
+		<div id="head">
+			<img src="./pics/berlin2.gif" id="welcome">
+			<img src="./pics/azurlogo.gif" id="logo">
+		</div>
+		
+		<div id="divnav">
+			<ul id="lang">
+				<li id="lang1"><a href="index.html">Deutsch</a></li>
+				<li><a>-</a></li>
+				<li><a href="index-e.html">Englisch</a></li>
+			</ul>
+			
+			<ul id="navlist">
+				<li><a href="./anfahrt.html" id="navlist6">Anfahrt</a></li>
+				<li><a href="./reservierung.html">Reservierung</a></li>
+				<li id="test">Preise</li>
+				<li><a href="./breakfast.html">Frühstück</a></li>
+				<li><a href="./zimmer.html">Zimmer</a></li>
+				<li><a href="./index.html">Home</a></li>
+			</ul>				
+		</div>
+		
+		<div id="center">
+			<div id="content">
+				<h2>Hotel Azur</h2>
+				<p>befindet sich am östlichen Stadtrand in Berlin-Kaulsdorf.
+            	   Obwohl Kaulsdorf zum Stadtgebiet Berlin gehört, gelang es 
+				   doch die beschauliche Ruhe und den Charme der Gründerzeit 
+				   zu erhalten und in einen attraktiven Wohnkiez zu verwandeln.
+				</p><br>
+				<p>Abseits vom Lärm der City, aber verkehrsgünstig gelegen, 
+				   erreichen sie den Stadtkern per PKW oder S-Bahn in ca. 30 Minuten. 
+				   Die Bahnstation ist nur 5 Gehminuten entfernt.
+				</p><br>
+				<p>Ihr Auto steht in dieser Zeit sicher auf unserem kostenfreien Parkplatz.
+				</p>
+			</div>
+			
+			<img id="front" src="./pics/azurfront.jpg">
+			<img id="berlinmap" src="./pics/berlin_kaulsdorf.gif">
+			<br>
+			<span id="maptext">Kaulsdorf</span>
+		</div>
+		
+		<div id="left">
+			<img src="./pics/hausazur.jpg" id="picleft">
+			<h2>Hotel Azur</h2>
+			<h2>Inh.: T. Meisel</h2>
+			<h3>Ferdinandstr. 39</h3> 
+			<h3>12621 Berlin</h3>
+			<p>Tel.: +49-(0)30-5654020</p>
+			<p>Fax: +49-(0)30-56540214</p>
+			<p>E-Mail: hausazur@aol.com </p>
+			<a href="./impressum.html">Impressum</a>
+			<a href="http://www.freeguestbook.de/readbook.cgi?21536">Gästebuch</a>
+			<img src="./pics/hotelde.jpg" id="picdownleft">
+		</div>
+		
+	</div>
+</body>
+</html>
